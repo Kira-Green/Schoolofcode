@@ -8,3 +8,8 @@ function createOrangeDiv() {
     inner.innerText='Hello Bootcampers';
     outer.appendChild(inner);
 }
+
+function changeColor(color) {
+    var inner = document.getElementById('inner')
+    inner.style.backgroundColor = color;
+}

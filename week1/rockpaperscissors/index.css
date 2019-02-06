@@ -1,0 +1,28 @@
+
+.button {
+
+  font-size: 40px;
+}
+
+#RPScontainer {
+    height: 300px;
+    width: 800px;
+
+}
+
+#resultContainer {
+    height: 100px;
+    width: 300px;
+}
+
+.resultclass {
+    font-size: 30px;
+}
+
+#playerRes {
+
+}
+
+#computerRes {
+    
+}
