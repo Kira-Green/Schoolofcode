@@ -17,3 +17,7 @@ The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be adde
 
 The splice() method returns an array with the deleted items:
 ...  spreads out items in an array useful for concat arrays so don't end up with array in an array
+
+
+map immutable
+
