@@ -7,16 +7,28 @@
 #RPScontainer {
     height: 300px;
     width: 800px;
+    display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
 
 }
 
 #resultContainer {
     height: 100px;
     width: 300px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .resultclass {
     font-size: 30px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #playerRes {
