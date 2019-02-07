@@ -4,6 +4,8 @@ const title = "Please make your move";
 var computerScore = 0;
 var playerScore = 0;
 var drawScore = 0;
+var result = "";
+
 
 // for (i = 0; i < 5; i++) {
 	// var playerMove = prompt(title, "rock, paper or scissors");
@@ -39,35 +41,57 @@ var drawScore = 0;
 		const moves = ["rock", "paper", "scissors"];
 		var computerMove = moves[Math.floor(Math.random() * moves.length)];
 		if (playerMove === computerMove) {
+			result = "It is a draw"
 			console.log(`It is a draw`);
 			drawScore = drawScore + 1;
 		} else if (playerMove === `scissors`) {
 			if (computerMove === `rock`) {
+				result = "computer wins"
 				console.log(`computer wins`);
 				computerScore = computerScore + 1;
 			} else {
+				result = "player wins"
 				console.log(`player wins`);
 				playerScore = playerScore + 1;
 			}
 		} else if (playerMove === `rock`) {
 			if (computerMove === `paper`) {
+				result = "computer wins"
 				console.log(`computer wins`);
 				computerScore = computerScore + 1;
 			} else {
+				result = "player wins"
 				console.log(`player wins`);
 				playerScore = playerScore + 1;
 			}
 		} else if (playerMove === `paper`) {
 			if (computerMove === `scissors`) {
+				result = "computer wins"
 				console.log(`computer wins`);
 				computerScore = computerScore + 1;
 			} else {
+				result = "player wins"
 				console.log(`player wins`);
 				playerScore = playerScore + 1;
 			}
 		} else {
 			console.log(`That is not a move`);
 		}
+		document.getElementById("resultBox");
+		resultBox.innerHTML = result;
+
+		document.getElementById("playerRes");
+		playerRes.innerHTML = `Your move was: ${playerMove}`;
+
+		document.getElementById("computerRes");
+		computerRes.innerHTML = `Computer move was: ${computerMove}`;
+
+		document.getElementById("playerScoreText");
+		playerScoreText.innerText = playerScore;
+
+		document.getElementById("computerScoreText");
+		computerScoreText.innerText = computerScore;
+		console.log(computerScore);
 	}
 
 	// compareMoves();

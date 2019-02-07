@@ -15,8 +15,8 @@
 }
 
 #resultContainer {
-    height: 100px;
-    width: 300px;
+    height: 300px;
+    width: 600px;
     display: flex;
   justify-content: center;
   align-items: center;
@@ -26,9 +26,10 @@
 .resultclass {
     font-size: 30px;
     display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
+  flex-direction: column;
 }
 
 #playerRes {
@@ -37,4 +38,18 @@
 
 #computerRes {
     
+}
+
+#scorebox {
+height: 200px;
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+font-size: 30px;
+flex-direction: row;
+
+}
+
+.scoreboxclass {
+ width: 150px;
 }
