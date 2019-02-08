@@ -1,0 +1,13 @@
+body {
+
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+img{
+    height: 200px;
+    width: 150px;
+}
