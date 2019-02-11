@@ -85,7 +85,7 @@ body {
 #nose {
     height: 130px;
     width: 80px;
-    border-radius: 50%;
+    border-radius: 50px 50px 50px 50px;
     position: absolute;
     background: brown;
     left: -30px;
@@ -95,12 +95,23 @@ body {
  #leftTriangle {
       width: 0;
       height: 0;
-      border-left: 50px solid transparent;
-      border-right: 50px solid transparent;
-      border-bottom: 100px solid red;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-bottom: 50px solid lightgray;
       position: absolute;
-      top: -150px;
-      /* left: 10px; */
+      top: -130px;
+      left: -40px;
+    }
+
+    #rightTriangle {
+      width: 0;
+      height: 0;
+      border-left: 18px solid transparent;
+      border-right: 18px solid transparent;
+      border-bottom: 36px solid lightgray;
+      position: absolute;
+      top: -120px;
+      left: -5px;
     }
 
 
