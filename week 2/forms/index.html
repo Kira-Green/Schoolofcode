@@ -22,13 +22,29 @@
     <form id = "myForm">
         <fieldset>
             <legend>Form with JS to trigger submit</legend>
-            
-
-
+            <label for ="input1">input 1</label> <input type="text" name="input">
+            <button onclick="submitForm()">submit</button> 
         </fieldset>
-
-
     </form>
+
+    <form onsubmit="handleFormSubmit(event)">
+        <fieldset>
+            <legend>JS function preventing the form</legend>
+            <label for = "input1">input</label> <input type="text" name="input">
+            <button type="submit">submit</button>
+        </fieldset>
+    </form>
+
+    <script>
+    function submitForm() {
+        document.getElementById("myForm").submit();
+    }
+
+    function handleFormSubmit(event){
+        event.preventDefault() 
+        console.log(event)
+    }
+    </script>
     
 </body>
 </html>
