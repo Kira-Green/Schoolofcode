@@ -1,0 +1,108 @@
+body {
+    background-color: blue;
+    display: flex;
+}
+
+#koala {
+
+    /* display : flex; */
+    /* align-items: center; */
+}
+
+#circle {
+      width: 300px;
+      height: 300px;
+      display: flex;
+      background: lightgrey;
+      border-radius: 50%;
+      position: relative;
+      top: -130px;
+      left: 30px;
+      order: 1;
+      
+    }
+
+.ear {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background: lightgrey;
+    border-radius: 50%;
+    position: relative;
+} 
+
+.innerEar {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    background: grey;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+}
+
+#rightEar {
+    position: absolute;
+    display: flex;
+     top: -20px;
+    left: 220px;
+    z-index: -1;
+
+}
+
+.eye {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+} 
+
+.pupil {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+
+#leftEye {
+    top: 30%;
+    left: 20%;
+}
+
+#rightEye {
+    top: 30%;
+    left: 50%;
+}
+
+#nose {
+    height: 130px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    background: brown;
+    left: -30px;
+    top: 60px;
+}
+
+ #leftTriangle {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid red;
+      position: absolute;
+      top: -150px;
+      /* left: 10px; */
+    }
+
+
+
+

@@ -72,7 +72,7 @@ var result = "";
 			} else {
 				result = "player wins"
 				console.log(`player wins`);
-				playerScore = playerScore + 1;
+				playerScore = playerScore + 1;   //CAN PUT PLAYERSCORE++
 			}
 		} else {
 			console.log(`That is not a move`);
