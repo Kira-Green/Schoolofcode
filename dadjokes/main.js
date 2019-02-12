@@ -21,6 +21,9 @@ function getQuote() {
             quoteDiv.innerText = response[0].quote;
             const authorDiv = document.getElementById("author");
             authorDiv.innerText = response[0].character;
+            const imgDiv = document.getElementById("image");
+            imgDiv.src = response[0].image;
+            
         })
 
         .catch(function (error) {
