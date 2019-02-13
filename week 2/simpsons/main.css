@@ -1,0 +1,36 @@
+/* all heights and widths are in vw or vh so the website is responsive */
+
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 15vh;
+}
+
+#center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#quote {
+    max-width: 40vw;
+    align-items: flex-end;
+    text-align: center;
+    font-size: 30px;
+}
+
+#author {
+    text-align: center;
+    align-items: flex-start;
+    font-size: 20px;
+}
+
+#leftImage {
+    max-width: 40vw;
+    height: auto;
+}
+
+#rightImage {
+    max-width: 40vw;
+    height: auto;
+}

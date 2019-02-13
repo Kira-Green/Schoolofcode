@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#circle {
+    position: absolute;
+    margin-top: 5vw;
+    padding-top: 50vw;
+    width: 50vw;
+    border-radius: 50%;
+    border-width: thick;
+    border-style: solid;
+    border-color: black;
+}
+
+#blob {
+    position: absolute;
+    margin-top: 29vw;
+    padding-top: 2vw;
+    width: 2vw;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.hands {
+    position: absolute;
+    margin-top: 30vw;
+    left: 50%;
+    transform-origin: top left;
+    border-style: solid;
+    border-color: black;
+}
+
+#hours {
+    border-width: thick;
+    width: 15vw;
+}
+
+#minutes {
+    border-width: medium;
+    width: 20vw;
+}
+
+#seconds {
+    border-width: thin;
+    width: 20vw;
+}
