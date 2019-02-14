@@ -24,6 +24,7 @@ function Item(name, price, stock, calorieCount, type) {
         console.log(description);
     }   
     
+    
     //we want a function to be able to sell an item 
     //  check stock levels are enough for quantity
     //  if not enough handle situation
@@ -45,3 +46,9 @@ function Item(name, price, stock, calorieCount, type) {
 const bread = new Item("Artisan Bread", 2.5, 10, 500, "hot")
 const doughnut = new Item("Jam Filled doughnut", 0.5, 20, 800, "hot")
 const croissant = new Item( "Plain Croissant", 1.75, 5, 600, "hot")
+const items = [bread, doughnut, croissant]
+
+function printDescription(item) {
+ item.describe() ;  
+}
+items.forEach(printDescription);
