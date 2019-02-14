@@ -40,3 +40,22 @@ console.log(curryresult)
 const alwaysAdd10 = curriedsum3(10)
 let added10 = alwaysAdd10(1)(3)
 console.log(added10)
+
+//another example
+
+function getLettersAsLower(start, length, string){
+    return string.substr(start, length).toLowerCase()
+}
+getLettersAsLower(0, 4, "KiraGreen")
+
+function curriedGetLettersAsLower(start) {
+    return function (length) {
+        return function (string) {
+            return string.substr(start, length).toLowerCase()
+        }
+    }
+}
+
+let startAtFirstLetter = curriedGetLettersAsLower(0)
+let startAnd10Letter = startAtFirstLetter(10)
+console.log(startAnd10Letter("hello, I like curry"))
