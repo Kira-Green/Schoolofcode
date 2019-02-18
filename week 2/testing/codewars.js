@@ -2,8 +2,7 @@ function filterOdd (num) {
     
     const sorted = num.sort(function (a, b) { return a - b })
         return sorted.filter(checknum);
-        
-
+     
     }
     function checknum(number) { if (number % 2 === 1) { return number } }
 
