@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css"> -->
+    <!-- <script src="main.js"></script> -->
+
+   </head>
+
+<body>
+    <!-- Challenge 1 -->
+    <div>
+        <h1 id = "header">Change Me</h1>
+        <input type="text" name="inputText" id ="newText"/>
+        <button type="submit" onclick="changeText()">Press Me</button>
+    </div>
+    <!-- /*
+           Implement the following functionality
+             When a user presses the button, the text in the h1 tag should change to reflect what the user has entered in the input field
+             If the input field is empty, this change shouldn't happen
+             Use the onclick attribute to achieve this
+             Bonus points for a warning message (however you like) for an empty input field attempt
+             */ -->
+    <script>
+            const changeText = () => {
+            const header = document.getElementById("header");
+            const newText = document.getElementById("newText").value;
+                if (newText === "") {
+                    alert("oops, no text entered")
+                    return;
+                }
+                header.innerHTML = newText;
+            }
+            
+        
+        </script>
+
+    <!-- Challenge 2 -->
+    <div>
+        <ul>
+        </ul>
+        <input />
+        <button id = "addButton">Add Me</button>
+    </div>
+    <script>
+        
+        const addButton = document.getElementById(addButton)
+        addButton.addEventListener("click", addText)
+
+
+        
+        /*
+            Implement the following functionality
+              When a user presses the button, the list should have an item added containing what the user has entered in the input field
+              If the input field is empty, this change shouldn't happen
+              Add an event listener to achieve this
+              Bonus points for a warning message (however you like) for an empty input field attempt (in a different way to above)
+        * /
+    </script>
+</body>
+
+</html>
