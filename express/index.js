@@ -58,7 +58,8 @@ app.get('/books', (req,res) => {
         console.log(err);
     }
     let data = JSON.parse(booksData)
-    if (!bookName) {
+    if (!
+        bookName) {
         res.json(data)
     }
     let book = data[bookName]
